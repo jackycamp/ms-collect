@@ -20,6 +20,8 @@ MS-1 3D Plot             |  MS-1 3D Spectrum
 
 For instance, this package has named entities that represent MS Features and Isotopic Traces. But fundamentally they are just a collection of points where each point has 3 primary attributes: mass to charge (m/z), Retention Time, and Intensity/Abundance. 
 
+It is often quite useful to visualize what is going on in these regions. The figures above were generated using this package.
+
 ## Usage
 > This section includes very basic usage, refer to the examples section for more details/advanced usage.
 Coming soon: Docs via sphynx.
@@ -29,6 +31,8 @@ Coming soon: Docs via sphynx.
 from ms_collect.scope import Scope
 from ms_collect.envelope import Envelope
 from ms_collection.point import Point
+from ms_collection.collection import Collection
+
 
 # Define a scope from an m/z and Retention Time region
 min_mz = 437.844
@@ -56,6 +60,16 @@ my_envelope.cumulative_intensity()
 convexhull = my_envelope.convex_hull()
 ch.hull()
 # -> [(437.8870316623645, 958.66042827198), (437.88703282730677, 956.1165142560001), (437.8870410510394, 952.112642559), (437.8870495438886, 948.82877457498), (437.887053517079, 948.0991699829999), (437.88705863613876, 947.368067583),(438.22419874976924, 957.5778559199999), (438.2229531181884, 960.11862664002), (437.88945990101047, 962.3162991049801), (437.8882413409473, 961.2199352969999)]
+
+# For some visual tools you have access to things like:
+# (methods below render figures via a matplotlib backbone)
+
+some_pts = [..]
+collection = Collection(points=some_pts)
+
+collection.three_d() # -> plots the points in 3d space.
+collection.spectrum() # -> displays these points in a 'spectrum' fashion
+collection.three_d_spectrum() # -> displays a spectrum in a 3d orientation.
 
 ```
 
