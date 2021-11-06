@@ -1,0 +1,4 @@
+build/
+dist/
+src/ms_collect.egg-info/
+.DS_Store
