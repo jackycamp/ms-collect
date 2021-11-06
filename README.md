@@ -12,7 +12,9 @@ pip install ms-collect
 In regions of m/z and Retention Time, there exists various signals, features, and collections of data.
 This package aims to provide an interface for intuitively representing that data and providing actions/visualizations on said collections.
 
-![3D collection](threeD_collection.png "3D plot of MS-1 Data")
+MS-1 3D Plot             |  MS-1 3D Spectrum
+:-------------------------:|:-------------------------:
+![3D collection](threeD_collection.png "3D plot of MS-1 Data")  |  ![3D Spectrum](threeD_spectrum.png "3D spectrum plot of MS-1 Data")
 
 ### **ms-collect**, at its core, provides a base _Collection_ interface to which entities extend from.
 
