@@ -1,5 +1,10 @@
 # ms-collect
 A series of modules that provide easy storage/accesss to Mass Spec related Raw Data / Groupings of Data.
+- Documentation: https://jakuzo.github.io/ms-collect/
+- Bug Reports/Feature Requests: https://github.com/jakuzo/ms-collect/issues
+- Source Code: https://github.com/jakuzo/ms-collect
+- The Why: todo
+- Contributing: todo
 
 > Note this package is currently in BETA and is under active development. Moreover, the docs are a work in progress.
 
@@ -7,7 +12,6 @@ A series of modules that provide easy storage/accesss to Mass Spec related Raw D
 ```sh
 pip install ms-collect
 ```
-
 ## Background
 In regions of m/z and Retention Time, there exists various signals, features, and collections of data.
 This package aims to provide an interface for intuitively representing that data and providing actions/visualizations on said collections.
