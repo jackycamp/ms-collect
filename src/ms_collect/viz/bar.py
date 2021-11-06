@@ -21,6 +21,8 @@ class Bar:
         """
         plt.figure()
         plt.bar(self.x, self.y, width=0.1, color='black')
+        plt.xlabel('m/z', fontweight='bold', color='black', fontsize='13', horizontalalignment='center')
+        plt.ylabel('Signal Intensity', fontweight='bold', color='black', fontsize='13', horizontalalignment='center')
         plt.show()
 
 class Bar3D:

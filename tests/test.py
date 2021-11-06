@@ -28,8 +28,8 @@ with open(MS_POINT_TESTING_FILE) as csvfile:
 
 col = Collection(points=pts)
 # col.three_d()
-# col.spectrum()
-col.three_d_spectrum()
+col.spectrum()
+# col.three_d_spectrum()
 # col = Collection()
 
 # print("avg something?: ", reduce(lambda a, b: a.rt + b.rt, pts))
