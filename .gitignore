@@ -2,4 +2,5 @@ build/
 dist/
 src/ms_collect.egg-info/
 src/ms_collect/__pycache__/
+src/ms_collect/viz/__pycache__/
 .DS_Store

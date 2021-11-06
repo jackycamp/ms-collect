@@ -6,8 +6,8 @@ from ms_collect.envelope import Envelope
 from ms_collect.point import Point
 from ms_collect.scope import Scope
 
-# MS_POINT_TESTING_FILE = './ms_points_0.0.0.csv'
-MS_POINT_TESTING_FILE = './ms_points_0.0.1.csv'
+MS_POINT_TESTING_FILE = './ms_points_0.0.0.csv'
+# MS_POINT_TESTING_FILE = './ms_points_0.0.1.csv'
 
 
 #### TODO:
@@ -28,7 +28,8 @@ with open(MS_POINT_TESTING_FILE) as csvfile:
 
 col = Collection(points=pts)
 # col.three_d()
-col.spectrum()
+# col.spectrum()
+col.three_d_spectrum()
 # col = Collection()
 
 # print("avg something?: ", reduce(lambda a, b: a.rt + b.rt, pts))
