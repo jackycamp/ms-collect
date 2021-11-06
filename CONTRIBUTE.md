@@ -11,6 +11,19 @@ python -m pip install -e .
 ### AUTOMATED TESTING COMING SOON
 Automated testing using unittest
 
+### Documentation
+Install Sphynx
+```sh
+pip install sphinx
+```
+
+Build and render the docs as html
+```sh
+sphinx-build -b html docs/source/ docs/build/html
+```
+
+Open **docs/build/html/index.html** and you should see the docs in the browser.
+
 
 ### Publishing a new version of ms-collect
 Note, if you are not marked as a collaborator in the package registry, you will not be allowed to
