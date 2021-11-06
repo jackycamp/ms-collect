@@ -1,5 +1,5 @@
 Installation
-=====
+=============
 
 
 To use ms-collect, first install it using pip:

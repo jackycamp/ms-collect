@@ -7,15 +7,8 @@ Welcome to ms-collect's documentation!
 ======================================
 
 .. toctree::
+   background
    installation
+   contribute
    :maxdepth: 2
    :caption: Contents:
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
