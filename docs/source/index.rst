@@ -6,9 +6,13 @@
 Welcome to ms-collect's documentation!
 ======================================
 
+**ms_collect's documentation is still a work in progress.** 
+**Your patience and understanding is greatly appreciated.**
+
 .. toctree::
    background
    installation
+   collection
    contribute
    :maxdepth: 2
    :caption: Contents:
