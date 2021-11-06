@@ -16,6 +16,7 @@ MS-1 3D Plot             |  MS-1 3D Spectrum
 :-------------------------:|:-------------------------:
 ![3D collection](threeD_collection.png "3D plot of MS-1 Data")  |  ![3D Spectrum](threeD_spectrum.png "3D spectrum plot of MS-1 Data")
 
+![3D collection as spectrum](spectrum.png "Standard Spectrum representation of an MS-1 Collection")
 ### **ms-collect**, at its core, provides a base _Collection_ interface to which entities extend from.
 
 For instance, this package has named entities that represent MS Features and Isotopic Traces. But fundamentally they are just a collection of points where each point has 3 primary attributes: mass to charge (m/z), Retention Time, and Intensity/Abundance. 
