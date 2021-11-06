@@ -22,10 +22,10 @@ pip install karma-sphinx-theme
 
 Build and render the docs as html
 ```sh
-sphinx-build -b html docs/source/ docs/build/html
+sphinx-build -b html docs/source/ docs/html
 ```
 
-Open **docs/build/html/index.html** and you should see the docs in the browser.
+Open **docs/index.html** and you should see the docs in the browser.
 
 
 ### Publishing a new version of ms-collect
