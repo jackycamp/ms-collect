@@ -5,6 +5,7 @@ from .scope import Scope
 from .point import Point
 from .math import ConvexHull
 from .utils import Utils
+from .viz.scatter import Scatter3D
 
 class Collection:
 	def __init__(self, id: int = None, scope: Scope = None, points: List[Point] = []) -> None:
@@ -157,3 +158,23 @@ class Collection:
 		if (self.scope.min_mz <= point.mz <= self.scope.max_mz) and (self.scope.min_rt <= point.rt <= self.scope.max_rt):
 			return True
 		return False
+	
+	def as_dataframe(self):
+		# TODO
+		pass
+
+	def three_d(self):
+		# TODO: Pretty unideal, should be able to have a method that 
+		# returns a numpy array and we can just perform array slicing on the dimensions.
+		mz_data = Utils.to_ndarray(points=self.points, attributes_to_include=['mz'])
+		rt_data = Utils.to_ndarray(points=self.points, attributes_to_include=['rt'])
+		int_data = Utils.to_ndarray(points=self.points, attributes_to_include=['intensity'])
+		
+		scatter3d = Scatter3D(x=mz_data, y=rt_data, z=int_data)
+		scatter3d.plot()
+	
+	def spectrum(self):
+		pass
+
+	def three_d_spectrum(self):
+		pass

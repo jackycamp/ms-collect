@@ -6,6 +6,8 @@ pip install .
 
 Then in tests/ directory, you can run all the tests, test out development versions and so on
 
+python -m pip install -e .
+
 ### AUTOMATED TESTING COMING SOON
 Automated testing using unittest
 

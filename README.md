@@ -12,9 +12,7 @@ pip install ms-collect
 In regions of m/z and Retention Time, there exists various signals, features, and collections of data.
 This package aims to provide an interface for intuitively representing that data and providing actions/visualizations on said collections.
 
-![alt text](Extracted_ion_chromatogram.png "Extracted ion Chromatogram")
-
-Image credit: By CWenger at English Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=70844603
+![3D collection](threeD_collection.png "3D plot of MS-1 Data")
 
 ### **ms-collect**, at its core, provides a base _Collection_ interface to which entities extend from.
 
@@ -63,6 +61,7 @@ ch.hull()
 - Visual utilities for the various types of collections.
 - Optimizations on resource intensive class methods.
 - Better import/export and IO related functionality.
+- Converting a collection to a dataframe.
 - Better Api doc experience.
 - If you would like to see something here we are accepting feature requests! Please submit an issue or ping us!
 
