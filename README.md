@@ -3,8 +3,8 @@ A series of modules that provide easy storage/accesss to Mass Spec related Raw D
 - Documentation: https://jakuzo.github.io/ms-collect/
 - Bug Reports/Feature Requests: https://github.com/jakuzo/ms-collect/issues
 - Source Code: https://github.com/jakuzo/ms-collect
-- The Why: todo
-- Contributing: https://jakuzo.github.io/ms-collect/contribute.html
+- The Why: https://jakuzo.github.io/ms-collect/html/background.html
+- Contributing: https://jakuzo.github.io/ms-collect/html/contribute.html
 
 > Note this package is currently in BETA and is under active development. Moreover, the docs are a work in progress.
 
