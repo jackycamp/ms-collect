@@ -49,3 +49,9 @@ class Envelope(Collection):
 			Point: A Point instance representing this envelope's monoisotopic peak
 		"""
 		pass
+
+	def top_down(self) -> None:
+		pass
+
+	def isotopic_distribution(self) -> None:
+		pass

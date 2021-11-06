@@ -6,6 +6,7 @@ from .point import Point
 from .math import ConvexHull
 from .utils import Utils
 from .viz.scatter import Scatter3D
+from .viz.bar import Bar
 
 class Collection:
 	def __init__(self, id: int = None, scope: Scope = None, points: List[Point] = []) -> None:
@@ -174,7 +175,10 @@ class Collection:
 		scatter3d.plot()
 	
 	def spectrum(self):
-		pass
+		mz_data = Utils.pluck_dimension(points=self.points, dimension='mz')
+		int_data = Utils.pluck_dimension(points=self.points, dimension='intensity')
+		bar = Bar(x=mz_data, y=int_data)
+		bar.plot()
 
 	def three_d_spectrum(self):
 		pass

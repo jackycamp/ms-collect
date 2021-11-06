@@ -52,3 +52,23 @@ class Utils:
 			ndarray.append(pt_as_list)
 		
 		return ndarray
+	
+	@staticmethod
+	def pluck_dimension(points: List[Point], dimension: str = 'mz') -> List[float]:
+		"""[summary]
+
+		Args:
+			points (List[Point]): [description]
+			dimension (str, optional): [description]. Defaults to 'mz'.
+
+		Returns:
+			List[float]: [description]
+		"""
+		plucked = []
+		for pt in points:
+			if dimension == 'mz': plucked.append(pt.mz)
+			if dimension == 'rt': plucked.append(pt.rt)
+			if dimension == 'intensity': plucked.append(pt.intensity)
+		
+		return plucked
+
