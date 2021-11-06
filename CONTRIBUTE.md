@@ -12,9 +12,12 @@ python -m pip install -e .
 Automated testing using unittest
 
 ### Documentation
-Install Sphynx
 ```sh
+# Install sphinx
 pip install sphinx
+
+# Install html theme we use: Karma
+pip install karma-sphinx-theme
 ```
 
 Build and render the docs as html
