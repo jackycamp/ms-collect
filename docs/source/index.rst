@@ -7,6 +7,7 @@ Welcome to ms-collect's documentation!
 ======================================
 
 .. toctree::
+   installation
    :maxdepth: 2
    :caption: Contents:
 
