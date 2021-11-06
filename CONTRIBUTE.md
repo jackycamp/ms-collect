@@ -14,7 +14,18 @@ Automated testing using unittest
 Note, if you are not marked as a collaborator in the package registry, you will not be allowed to
 publish a new version.
 
-First ensure that you build:
+**Required Packages:**
+```sh
+# PEP517 package builder.
+# https://pypi.org/project/build/
+pip install build
+
+# Twine (for uploading to the registry)
+# https://pypi.org/project/twine/
+pip install twine
+```
+
+To build the package (assuming you're in the same directory as setup.cfg):
 ```sh
 python -m build
 ```
