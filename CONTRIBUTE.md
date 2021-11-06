@@ -11,6 +11,15 @@ python -m pip install -e .
 ### AUTOMATED TESTING COMING SOON
 Automated testing using unittest
 
+### Linting and AutoFormatting
+```sh
+# install pycodestyle via pip (style checker)
+pip install pycodestyle
+
+# install autopep8 via pip (code formatter)
+pip install autopep8
+```
+
 ### Documentation
 ```sh
 # Install sphinx
