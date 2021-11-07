@@ -137,8 +137,8 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="ms_collect.point.Point.__init__">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.point.Point.</span></span><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mz</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rt</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intensity</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ms_collect.point.Point.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Constructor for the point class. Represents a single Mass Spec raw data point.
-Has primary attributes m/z, retention time, and intensity.</p>
+<dd><p>Constructor for the point class. Represents a single Mass Spec raw
+data point. Has primary attributes m/z, retention time, and intensity.</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>mz (float, optional): [description]. Defaults to 0.0.
 rt (float, optional): [description]. Defaults to 0.0.
@@ -154,10 +154,11 @@ intensity (float, optional): [description]. Defaults to 0.0.</p>
 <dt class="sig sig-object py" id="ms_collect.point.Point.to_list">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.point.Point.</span></span><span class="sig-name descname"><span class="pre">to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">['mz',</span> <span class="pre">'rt',</span> <span class="pre">'intensity']</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.point.Point.to_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts this point’s current attributes to a list. This is especially
-helpful in porting to other utilities that primarily interface with ndarrays or
-things of a kind.</p>
+helpful in porting to other utilities that primarily interface
+with ndarrays or things of a kind.</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>attributes (List[str], optional): The attributes you wish to see in the converted list. Defaults to [‘mz’, ‘rt’, ‘intensity’].</p>
+<dt>Args:</dt><dd><p>attributes (List[str], optional): The attributes you wish to see
+in the converted list. Defaults to [‘mz’, ‘rt’, ‘intensity’].</p>
 </dd>
 <dt>Returns:</dt><dd><p>List[float]: The Point’s attributes as a list.</p>
 </dd>

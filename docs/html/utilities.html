@@ -137,13 +137,19 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="ms_collect.utils.Utils.to_mspoints">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.utils.Utils.</span></span><span class="sig-name descname"><span class="pre">to_mspoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawpoints</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_by_intensity_asc</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_by_intensity_desc</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.point.Point</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.utils.Utils.to_mspoints" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
+<dd><p>Converts a list of tuples that contain floats into
+a list of Points.</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>rawpoints (List[Tuple[float]], optional): [description]. Defaults to [].
-sort_by_intensity_asc (bool, optional): [description]. Defaults to False.
-sort_by_intensity_desc (bool, optional): [description]. Defaults to False.</p>
+<dt>Args:</dt><dd><p>rawpoints (List[Tuple[float]], optional): The list of raw data.
+Defaults to [].
+sort_by_intensity_asc (bool, optional): Whether or not to have the
+returned list of points sorted by increasing intensity.
+Defaults to False.
+sort_by_intensity_desc (bool, optional): Whether or not to have the
+returned list of points sorted by decreasing intensity.
+Defaults to False.</p>
 </dd>
-<dt>Returns:</dt><dd><p>List[Point]: [description]</p>
+<dt>Returns:</dt><dd><p>List[Point]: the converted list of Points.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -154,12 +160,14 @@ sort_by_intensity_desc (bool, optional): [description]. Defaults to False.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="ms_collect.utils.Utils.to_ndarray">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.utils.Utils.</span></span><span class="sig-name descname"><span class="pre">to_ndarray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.point.Point</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes_to_include</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">['mz',</span> <span class="pre">'rt',</span> <span class="pre">'intensity']</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.utils.Utils.to_ndarray" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
+<dd><p>Converts a list of Points to a two dimensional list of floats.</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>points (List[Point], optional): [description]. Defaults to [].
-attributes_to_include (List[str], optional): [description]. Defaults to [‘mz’, ‘rt’, ‘intensity’].</p>
+<dt>Args:</dt><dd><p>points (List[Point], optional): [description].
+Defaults to [].
+attributes_to_include (List[str], optional): [description].
+Defaults to [‘mz’, ‘rt’, ‘intensity’].</p>
 </dd>
-<dt>Returns:</dt><dd><p>List[List[float]]: [description]</p>
+<dt>Returns:</dt><dd><p>List[List[float]]: The converted ndarray.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -170,12 +178,14 @@ attributes_to_include (List[str], optional): [description]. Defaults to [‘mz�
 <dl class="py function">
 <dt class="sig sig-object py" id="ms_collect.utils.Utils.pluck_dimension">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.utils.Utils.</span></span><span class="sig-name descname"><span class="pre">pluck_dimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.point.Point</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'mz'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.utils.Utils.pluck_dimension" title="Permalink to this definition">¶</a></dt>
-<dd><p>[summary]</p>
+<dd><p>Plucks a single dimension from a list of points.</p>
 <dl class="simple">
-<dt>Args:</dt><dd><p>points (List[Point]): [description]
-dimension (str, optional): [description]. Defaults to ‘mz’.</p>
+<dt>Args:</dt><dd><p>points (List[Point]): The Points you wish to convert.
+dimension (str, optional): The dimension you wish to pluck.
+Can be one of ‘mz’, ‘rt’, or ‘intensity’. Defaults to ‘mz’.</p>
 </dd>
-<dt>Returns:</dt><dd><p>List[float]: [description]</p>
+<dt>Returns:</dt><dd><p>List[float]: List of float values representing
+the plucked dimension.</p>
 </dd>
 </dl>
 </dd></dl>
