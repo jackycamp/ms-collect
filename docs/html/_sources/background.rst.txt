@@ -1,5 +1,6 @@
 Background
 ===========
 
+**This section is a work in progress**
 
-TODO
+TODO: The huh, the wut, the y

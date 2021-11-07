@@ -12,7 +12,11 @@ Welcome to ms-collect's documentation!
 .. toctree::
    background
    installation
+   point
    collection
+   envelope
+   trace
+   utilities
    contribute
    :maxdepth: 2
    :caption: Contents:

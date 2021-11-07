@@ -64,7 +64,13 @@ class Envelope(Collection):
         pass
 
     def top_down(self) -> None:
+        """
+        TODO
+        """
         pass
 
     def isotopic_distribution(self) -> None:
+        """
+        TODO
+        """
         pass

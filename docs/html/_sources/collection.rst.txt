@@ -1,6 +1,8 @@
 Collection
 ===========
 
+**This section is a work in progress**
+
 Let's walk through building a collection from a region in m/z and Retention Time 
 and a list of Points.
 
@@ -28,4 +30,87 @@ and a list of Points.
     # collection class.
 
 .. autofunction:: ms_collect.collection.Collection.__init__
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
 .. autofunction:: ms_collect.collection.Collection.avg_mz
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.avg_rt
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.avg_intensity
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.mz_bounds
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.rt_bounds
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.add_points
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.most_intense_point
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.cumulative_intensity
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.convex_hull
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.point_belongs
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.as_dataframe
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.three_d
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.spectrum
+
+.. code-block:: python
+
+    # TODO: Nice little code block here
+
+.. autofunction:: ms_collect.collection.Collection.three_d_spectrum

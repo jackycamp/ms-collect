@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Contribute" href="contribute.html" />
-    <link rel="prev" title="Installation" href="installation.html" /> 
+    <link rel="next" title="Envelope" href="envelope.html" />
+    <link rel="prev" title="Point" href="point.html" /> 
 
 </head>
 
@@ -109,8 +109,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="point.html">Point</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#pre-requisites">Pre-requisites</a></li>
+</ul>
+</li>
 </ul>
 
                             
@@ -123,6 +130,7 @@
                             
   <section id="collection">
 <h1>Collection<a class="headerlink" href="#collection" title="Permalink to this headline">¶</a></h1>
+<p><strong>This section is a work in progress</strong></p>
 <p>Let’s walk through building a collection from a region in m/z and Retention Time
 and a list of Points.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ms_collect.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
@@ -163,6 +171,9 @@ points (List, optional): A list of Point objects. Defaults to [].</p>
 </dl>
 </dd></dl>
 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="ms_collect.collection.Collection.avg_mz">
 <span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">avg_mz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.avg_mz" title="Permalink to this definition">¶</a></dt>
@@ -172,6 +183,170 @@ points.</p>
 <dt>Returns:</dt><dd><p>float: The average m/z value</p>
 </dd>
 </dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.avg_rt">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">avg_rt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.avg_rt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the average Retention Time value from this collection’s
+current list of points.n.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: The average Retention Time value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.avg_intensity">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">avg_intensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.avg_intensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the average Intensity value from this collection’s current
+list of points.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: The average Intensity value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.mz_bounds">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">mz_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.mz_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes minimum and maximum m/z values from this collection’s current
+list of points.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Tuple[float]: The min and max m/z values e.g. [432.32, 455.43]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.rt_bounds">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">rt_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.rt_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the minimum and maximum Retention Time values from this
+collection’s current list of points.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Tuple[float]: The min and max Retention Time values e.g.
+[1202.2090, 1394.3032]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.add_points">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">add_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.point.Point</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.add_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a list of points to this collection’s current list of points.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>points (List[Point]): The list of points to add (must be instances
+of the Point Class).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.most_intense_point">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">most_intense_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ms_collect.point.Point</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.most_intense_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the most intense point in this collection’s current
+list of points.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Point: The most intense point</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.cumulative_intensity">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">cumulative_intensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.cumulative_intensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the cumulative intensity from this collection’s
+current list of points.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: The cumulative intensity value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.convex_hull">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">convex_hull</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ms_collect.math.ConvexHull</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.convex_hull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a ConvexHull instance from this collection’s current list of
+points. See ConvexHull class for more details.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>ConvexHull: an instance of the ConvexHull class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.point_belongs">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">point_belongs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">ms_collect.point.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ms_collect.collection.Collection.point_belongs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines if it is reasonable to assume that an arbitrary point
+belongs to this envelope based off of its m/z and Retention Time scope.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>point (Point): The point in question</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: Whether or not the point belongs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.as_dataframe">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">as_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ms_collect.collection.Collection.as_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.three_d">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">three_d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ms_collect.collection.Collection.three_d" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Document</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.spectrum">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ms_collect.collection.Collection.spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Document</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.collection.Collection.three_d_spectrum">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">three_d_spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ms_collect.collection.Collection.three_d_spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Document</p>
 </dd></dl>
 
 </section>

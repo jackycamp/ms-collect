@@ -104,7 +104,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="point.html">Point</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collection.html">Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contribute.html#pre-requisites">Pre-requisites</a></li>
 </ul>
@@ -125,20 +129,135 @@
 <div class="genindex-jumpbox">
  <a href="#_"><strong>_</strong></a>
  | <a href="#A"><strong>A</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  
 </div>
 <h2 id="_">_</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="collection.html#ms_collect.collection.Collection.__init__">__init__() (in module ms_collect.collection.Collection)</a>
+
+      <ul>
+        <li><a href="envelope.html#ms_collect.envelope.Envelope.__init__">(in module ms_collect.envelope.Envelope)</a>
 </li>
+        <li><a href="point.html#ms_collect.point.Point.__init__">(in module ms_collect.point.Point)</a>
+</li>
+        <li><a href="trace.html#ms_collect.trace.Trace.__init__">(in module ms_collect.trace.Trace)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.add_points">add_points() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="envelope.html#ms_collect.envelope.Envelope.add_traces">add_traces() (in module ms_collect.envelope.Envelope)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.as_dataframe">as_dataframe() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="point.html#ms_collect.point.Point.as_string">as_string() (in module ms_collect.point.Point)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.avg_intensity">avg_intensity() (in module ms_collect.collection.Collection)</a>
+</li>
       <li><a href="collection.html#ms_collect.collection.Collection.avg_mz">avg_mz() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.avg_rt">avg_rt() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="envelope.html#ms_collect.envelope.Envelope.charge_state">charge_state() (in module ms_collect.envelope.Envelope)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.convex_hull">convex_hull() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.cumulative_intensity">cumulative_intensity() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="envelope.html#ms_collect.envelope.Envelope.isotopic_distribution">isotopic_distribution() (in module ms_collect.envelope.Envelope)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="envelope.html#ms_collect.envelope.Envelope.monoisotopic_peak">monoisotopic_peak() (in module ms_collect.envelope.Envelope)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.most_intense_point">most_intense_point() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.mz_bounds">mz_bounds() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="trace.html#ms_collect.trace.Trace.peak">peak() (in module ms_collect.trace.Trace)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="utilities.html#ms_collect.utils.Utils.pluck_dimension">pluck_dimension() (in module ms_collect.utils.Utils)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.point_belongs">point_belongs() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.rt_bounds">rt_bounds() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.spectrum">spectrum() (in module ms_collect.collection.Collection)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="collection.html#ms_collect.collection.Collection.three_d">three_d() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="collection.html#ms_collect.collection.Collection.three_d_spectrum">three_d_spectrum() (in module ms_collect.collection.Collection)</a>
+</li>
+      <li><a href="point.html#ms_collect.point.Point.to_list">to_list() (in module ms_collect.point.Point)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="utilities.html#ms_collect.utils.Utils.to_mspoints">to_mspoints() (in module ms_collect.utils.Utils)</a>
+</li>
+      <li><a href="utilities.html#ms_collect.utils.Utils.to_ndarray">to_ndarray() (in module ms_collect.utils.Utils)</a>
+</li>
+      <li><a href="envelope.html#ms_collect.envelope.Envelope.top_down">top_down() (in module ms_collect.envelope.Envelope)</a>
 </li>
   </ul></td>
 </tr></table>

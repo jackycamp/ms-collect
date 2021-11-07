@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; ms-collect 0.0.4 documentation</title>
+  <title>Trace &mdash; ms-collect 0.0.4 documentation</title>
   
 
   
@@ -28,7 +29,9 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Utilities" href="utilities.html" />
+    <link rel="prev" title="Envelope" href="envelope.html" /> 
 
 </head>
 
@@ -67,12 +70,14 @@
     
       <li><a href="index.html">Docs</a></li>
         
-      <li>Search</li>
+      <li>Trace</li>
     
     
       <li class="breadcrumbs-aside">
         
             
+            <a href="_sources/trace.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -86,7 +91,7 @@
                 <div class="col-12 col-lg-3 site-nav">
                     
 <div role="search">
-    <form class="search" action="#" method="get">
+    <form class="search" action="search.html" method="get">
         <div class="icon-input">
             <input type="text" name="q" placeholder="Search" />
             <span class="icon-search"></span>
@@ -101,13 +106,13 @@
                             
                             
                                 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point.html">Point</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collection.html">Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Trace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contribute.html#pre-requisites">Pre-requisites</a></li>
@@ -123,19 +128,39 @@
                     <div class="document">
                         
                             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <section id="trace">
+<h1>Trace<a class="headerlink" href="#trace" title="Permalink to this headline">¶</a></h1>
+<p><strong>This section is a work in progress</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.trace.Trace.__init__">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.trace.Trace.</span></span><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scope</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.scope.Scope</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ms_collect.point.Point</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ms_collect.trace.Trace.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor for a trace. Represents an isotopic trace which theoretically,
+is just a collection of ms1 raw points.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>scope (Scope, optional): The m/z and Retention Time bounds. See Scope class for more information. Defaults to None.
+points (List[Point], optional): List of points associated with this trace. See Point class for more information,. Defaults to [].</p>
+</dd>
+</dl>
+</dd></dl>
 
-  
-  <div id="search-results">
-  
-  </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="ms_collect.trace.Trace.peak">
+<span class="sig-prename descclassname"><span class="pre">ms_collect.trace.Trace.</span></span><span class="sig-name descname"><span class="pre">peak</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ms_collect.point.Point</span></span></span><a class="headerlink" href="#ms_collect.trace.Trace.peak" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the peak of this isotopic trace.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Point: Point instance representing the peak of this trace.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
 
                         
                     </div>
@@ -162,22 +187,14 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/searchtools.js"></script>
     <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
   
     <div class="footer" role="contentinfo">
         <div class="container">
             &#169; Copyright 2021, jakuzo.
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.
         </div>
-    </div>
-  
+    </div>  
 
 </body>
 </html>

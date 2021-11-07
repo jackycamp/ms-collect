@@ -1,6 +1,8 @@
 Contribute
 ===========
 
+**This section is a work in progress**
+
 If you are interested in becoming a collaborator for this project, feel free
 to reach out to one of the current collaborators. 
 
@@ -14,7 +16,7 @@ Pre-requisites
 ---------------
 
     Install the linting and code formatting tools using pip
-    
+
     - pycodestyle: linting/style checking in accordance with pep8
     - autopep8: code formatting in accordance with pep8
 
@@ -23,4 +25,13 @@ Pre-requisites
         $ pip install pycodestyle
 
         $ pip install autopep8
+    
+    Most of the contributors use vscode, if you do too, then we recommend installing
+    the following extensions:
+
+    - pylance
+
+    - Python-autopep8
+
+    - Change your Python Linter to: pycodestyle
 
