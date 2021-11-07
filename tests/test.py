@@ -46,12 +46,13 @@ col.spectrum()
 # hull = cvx_hull.hull()
 # print("Hull: ", hull)
 
-# min_mz = 437.844
-# max_mz = 438.94
-# min_rt = 946.004
-# max_rt = 981.107
+min_mz = 437.844
+max_mz = 438.94
+min_rt = 946.004
+max_rt = 981.107
 
-# scp = Scope([min_mz, max_mz, min_rt, max_rt])
+scp = Scope([min_mz, max_mz, min_rt, max_rt])
+print("Scope as string: ", scp.as_string())
 # my_envelope = Envelope(scope=scp)
 
 # pts_to_add = []
