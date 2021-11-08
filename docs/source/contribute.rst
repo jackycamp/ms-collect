@@ -46,7 +46,7 @@ Quick setup
 
 
 Requirements
-------------------
+--------------
 
     Install the linting and code formatting tools using pip
 

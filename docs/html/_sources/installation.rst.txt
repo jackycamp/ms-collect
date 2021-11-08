@@ -1,7 +1,6 @@
 Installation
 =============
 
-
 ms-collect is a standard pip package that can be found in the Python Package Index.
 
 You can install this package using pip:
