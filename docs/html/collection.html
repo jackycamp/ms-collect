@@ -109,14 +109,36 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="point.html">Point</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="point.html">Point</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="point.html#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="point.html#to-list">To List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="point.html#as-string">As String</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#average-m-z">Average m/z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#average-retention-time">Average Retention Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#average-intensity">Average Intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#m-z-bounds">m/z Bounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retention-time-bounds">Retention Time Bounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-points">Add Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#most-intense-point">Most Intense Point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cumulative-intensity">Cumulative Intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#convex-hull">Convex Hull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#point-belongs">Point Belongs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#as-dataframe">As Dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d">3-D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spectrum">Spectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-spectrum">3-D Spectrum</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contribute.html#quick-setup">Quick setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contribute.html#pre-requisites">Pre-requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contribute.html#githooks">Githooks</a></li>
 </ul>
 </li>
@@ -133,6 +155,8 @@
   <section id="collection">
 <h1>Collection<a class="headerlink" href="#collection" title="Permalink to this headline">¶</a></h1>
 <p><strong>This section is a work in progress</strong></p>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h2>
 <p>Let’s walk through building a collection from a region in m/z and Retention Time
 and a list of Points.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ms_collect.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
@@ -173,6 +197,9 @@ points (List, optional): A list of Point objects. Defaults to [].</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="average-m-z">
+<h2>Average m/z<a class="headerlink" href="#average-m-z" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -187,6 +214,9 @@ points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="average-retention-time">
+<h2>Average Retention Time<a class="headerlink" href="#average-retention-time" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -201,6 +231,9 @@ current list of points.n.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="average-intensity">
+<h2>Average Intensity<a class="headerlink" href="#average-intensity" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -215,6 +248,9 @@ list of points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="m-z-bounds">
+<h2>m/z Bounds<a class="headerlink" href="#m-z-bounds" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -229,6 +265,9 @@ list of points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="retention-time-bounds">
+<h2>Retention Time Bounds<a class="headerlink" href="#retention-time-bounds" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -244,6 +283,9 @@ collection’s current list of points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="add-points">
+<h2>Add Points<a class="headerlink" href="#add-points" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -258,6 +300,9 @@ of the Point Class).</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="most-intense-point">
+<h2>Most Intense Point<a class="headerlink" href="#most-intense-point" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -272,6 +317,9 @@ list of points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="cumulative-intensity">
+<h2>Cumulative Intensity<a class="headerlink" href="#cumulative-intensity" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -286,6 +334,9 @@ current list of points.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="convex-hull">
+<h2>Convex Hull<a class="headerlink" href="#convex-hull" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -300,6 +351,9 @@ points. See ConvexHull class for more details.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="point-belongs">
+<h2>Point Belongs<a class="headerlink" href="#point-belongs" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -316,6 +370,9 @@ belongs to this envelope based off of its m/z and Retention Time scope.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="as-dataframe">
+<h2>As Dataframe<a class="headerlink" href="#as-dataframe" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -324,6 +381,9 @@ belongs to this envelope based off of its m/z and Retention Time scope.</p>
 <span class="sig-prename descclassname"><span class="pre">ms_collect.collection.Collection.</span></span><span class="sig-name descname"><span class="pre">as_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ms_collect.collection.Collection.as_dataframe" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
+</section>
+<section id="d">
+<h2>3-D<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -333,6 +393,9 @@ belongs to this envelope based off of its m/z and Retention Time scope.</p>
 <dd><p>TODO: Document</p>
 </dd></dl>
 
+</section>
+<section id="spectrum">
+<h2>Spectrum<a class="headerlink" href="#spectrum" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -342,6 +405,9 @@ belongs to this envelope based off of its m/z and Retention Time scope.</p>
 <dd><p>TODO: Document</p>
 </dd></dl>
 
+</section>
+<section id="d-spectrum">
+<h2>3-D Spectrum<a class="headerlink" href="#d-spectrum" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -351,6 +417,7 @@ belongs to this envelope based off of its m/z and Retention Time scope.</p>
 <dd><p>TODO: Document</p>
 </dd></dl>
 
+</section>
 </section>
 
 

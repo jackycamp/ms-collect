@@ -109,13 +109,54 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Point</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collection.html">Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
-<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Point</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-list">To List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#as-string">As String</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collection.html">Collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#average-m-z">Average m/z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#average-retention-time">Average Retention Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#average-intensity">Average Intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#m-z-bounds">m/z Bounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#retention-time-bounds">Retention Time Bounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#add-points">Add Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#most-intense-point">Most Intense Point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#cumulative-intensity">Cumulative Intensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#convex-hull">Convex Hull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#point-belongs">Point Belongs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#as-dataframe">As Dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#d">3-D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#spectrum">Spectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection.html#d-spectrum">3-D Spectrum</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="envelope.html">Envelope</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#add-traces">Add Traces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#charge-state">Charge State</a></li>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#monoisotopic-peak">Monoisotopic Peak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#top-down">Top Down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="envelope.html#isotopic-distribution">Isotopic Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trace.html#constructor">Constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trace.html#peak">Peak</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#ms-points">MS Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#nd-array">ND-array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utilities.html#pluck-dimension">Pluck Dimension</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contribute.html#pre-requisites">Pre-requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#quick-setup">Quick setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#githooks">Githooks</a></li>
 </ul>
 </li>
 </ul>
@@ -130,6 +171,8 @@
                             
   <section id="point">
 <h1>Point<a class="headerlink" href="#point" title="Permalink to this headline">¶</a></h1>
+<section id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h2>
 <p><strong>This section is a work in progress</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
@@ -147,6 +190,9 @@ intensity (float, optional): [description]. Defaults to 0.0.</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="to-list">
+<h2>To List<a class="headerlink" href="#to-list" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -165,6 +211,9 @@ in the converted list. Defaults to [‘mz’, ‘rt’, ‘intensity’].</p>
 </dl>
 </dd></dl>
 
+</section>
+<section id="as-string">
+<h2>As String<a class="headerlink" href="#as-string" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Nice little code block here</span>
 </pre></div>
 </div>
@@ -179,6 +228,7 @@ Particularly useful for debugging purposes.</p>
 </dl>
 </dd></dl>
 
+</section>
 </section>
 
 

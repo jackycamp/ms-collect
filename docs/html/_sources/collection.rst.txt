@@ -3,6 +3,9 @@ Collection
 
 **This section is a work in progress**
 
+Constructor
+-------------
+
 Let's walk through building a collection from a region in m/z and Retention Time 
 and a list of Points.
 
@@ -31,11 +34,18 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.__init__
 
+
+Average m/z
+-------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.avg_mz
+
+Average Retention Time
+-----------------------
 
 .. code-block:: python
 
@@ -43,11 +53,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.avg_rt
 
+Average Intensity
+------------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.avg_intensity
+
+m/z Bounds
+------------
 
 .. code-block:: python
 
@@ -55,11 +71,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.mz_bounds
 
+Retention Time Bounds
+----------------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.rt_bounds
+
+Add Points
+-------------
 
 .. code-block:: python
 
@@ -67,11 +89,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.add_points
 
+Most Intense Point
+-------------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.most_intense_point
+
+Cumulative Intensity
+---------------------
 
 .. code-block:: python
 
@@ -79,11 +107,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.cumulative_intensity
 
+Convex Hull
+-------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.convex_hull
+
+Point Belongs
+-------------
 
 .. code-block:: python
 
@@ -91,11 +125,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.point_belongs
 
+As Dataframe
+-------------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.as_dataframe
+
+3-D
+-------------
 
 .. code-block:: python
 
@@ -103,11 +143,17 @@ and a list of Points.
 
 .. autofunction:: ms_collect.collection.Collection.three_d
 
+Spectrum
+-----------
+
 .. code-block:: python
 
     # TODO: Nice little code block here
 
 .. autofunction:: ms_collect.collection.Collection.spectrum
+
+3-D Spectrum
+-------------
 
 .. code-block:: python
 
