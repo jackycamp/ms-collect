@@ -9,8 +9,41 @@ to reach out to one of the current collaborators.
 However, feel free to clone the source code, play around with it, make improvements,
 address some open issues, or whatever floats your boat. 
 
-    This guide aims to make the setup of your local development environment a little easier.
-    But assumes that you have Python 3 and pyenv setup on your machine.
+    This guide aims to make the setup of your ms-collect development environment a little easier.
+    But assumes that you have Python3 or pyenv setup on your machine.
+
+    **These sections assume that you are using Python3**
+
+Quick setup
+-------------
+
+So you want to get your hands on the code huh? You want to know the quickest way to do that huh?
+
+Easy. Just follow this section :)
+
+1. First clone the repository and cd into ms-collect:
+
+.. code-block:: console
+
+    $ git clone https://github.com/jakuzo/ms-collect.git
+
+    $ cd ms-collect
+
+2. Next install the development dependencies:
+
+.. code-block:: console
+
+    $ pip install -r requirements.txt
+
+3. Then install an editable instance of ms-collect. This allows you to make changes to all
+of the source code under ``src/`` and not have to build it every time.
+
+.. code-block:: console
+
+    $ python -m pip install -e .
+
+4. There are some datasets in csv format under ``test/`` that you can play around with as well. 
+
 
 Pre-requisites
 ---------------

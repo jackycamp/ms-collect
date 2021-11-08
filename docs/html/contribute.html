@@ -114,6 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="trace.html">Trace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-setup">Quick setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pre-requisites">Pre-requisites</a></li>
 </ul>
 </li>
@@ -135,9 +136,37 @@ to reach out to one of the current collaborators.</p>
 <p>However, feel free to clone the source code, play around with it, make improvements,
 address some open issues, or whatever floats your boat.</p>
 <blockquote>
-<div><p>This guide aims to make the setup of your local development environment a little easier.
-But assumes that you have Python 3 and pyenv setup on your machine.</p>
+<div><p>This guide aims to make the setup of your ms-collect development environment a little easier.
+But assumes that you have Python3 or pyenv setup on your machine.</p>
+<p><strong>These sections assume that you are using Python3</strong></p>
 </div></blockquote>
+<section id="quick-setup">
+<h2>Quick setup<a class="headerlink" href="#quick-setup" title="Permalink to this headline">¶</a></h2>
+<p>So you want to get your hands on the code huh? You want to know the quickest way to do that huh?</p>
+<p>Easy. Just follow this section :)</p>
+<ol class="arabic simple">
+<li><p>First clone the repository and cd into ms-collect:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/jakuzo/ms-collect.git
+
+<span class="gp">$ </span><span class="nb">cd</span> ms-collect
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Next install the development dependencies:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install -r requirements.txt
+</pre></div>
+</div>
+<p>3. Then install an editable instance of ms-collect. This allows you to make changes to all
+of the source code under <code class="docutils literal notranslate"><span class="pre">src/</span></code> and not have to build it every time.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python -m pip install -e .
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>There are some datasets in csv format under <code class="docutils literal notranslate"><span class="pre">test/</span></code> that you can play around with as well.</p></li>
+</ol>
+</section>
 <section id="pre-requisites">
 <h2>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this headline">¶</a></h2>
 <blockquote>
