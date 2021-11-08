@@ -6,29 +6,32 @@ from ms_collect.envelope import Envelope
 from ms_collect.point import Point
 from ms_collect.scope import Scope
 
-MS_POINT_TESTING_FILE = './ms_points_0.0.0.csv'
-# MS_POINT_TESTING_FILE = './ms_points_0.0.1.csv'
+# MS_POINT_TESTING_FILE = './ms_points_0.0.0.csv'
+MS_POINT_TESTING_FILE = './ms_points_0.0.1.csv'
 
 
-#### TODO:
-## Rest assured: Automated unit testing coming soon!!
+# TODO: This section is somewhat a play ground but
+# hopefully this will be where our unit tests go.¯\_(ツ)_/¯
 
 pts = []
 with open(MS_POINT_TESTING_FILE) as csvfile:
-	reader = csv.reader(csvfile)
-	for index, row in enumerate(reader):
-		if index == 0: continue
+    reader = csv.reader(csvfile)
+    for index, row in enumerate(reader):
+        if index == 0:
+            continue
 
-		new_pt = Point(mz=row[0], rt=row[1], intensity=row[2])
-		pts.append(new_pt)
+        new_pt = Point(mz=row[0], rt=row[1], intensity=row[2])
+        pts.append(new_pt)
 
 # for pt in pts:
 # 	print(pt.as_string())
 
+print("Number of points: ", len(pts))
+
 
 col = Collection(points=pts)
-# col.three_d()
-col.spectrum()
+col.three_d()
+# col.spectrum()
 # col.three_d_spectrum()
 # col = Collection()
 
@@ -46,13 +49,13 @@ col.spectrum()
 # hull = cvx_hull.hull()
 # print("Hull: ", hull)
 
-min_mz = 437.844
-max_mz = 438.94
-min_rt = 946.004
-max_rt = 981.107
+# min_mz = 437.844
+# max_mz = 438.94
+# min_rt = 946.004
+# max_rt = 981.107
 
-scp = Scope([min_mz, max_mz, min_rt, max_rt])
-print("Scope as string: ", scp.as_string())
+# scp = Scope([min_mz, max_mz, min_rt, max_rt])
+# print("Scope as string: ", scp.as_string())
 # my_envelope = Envelope(scope=scp)
 
 # pts_to_add = []
@@ -66,4 +69,3 @@ print("Scope as string: ", scp.as_string())
 
 # ch = my_envelope.convex_hull()
 # print("Convex hull: ", ch.hull())
-

@@ -192,15 +192,26 @@ class Collection:
         """
         TODO: Document
         """
-        # TODO: Pretty unideal, should be able to have a method that
-        # returns a numpy array and we can just perform array slicing on
-        # the dimensions.
+        # There's some pretty serious performance issues when you provide
+        # the plot alot of points to Matplotlib's artists. If we detect
+        # more than 10000 points, then we take the 10000 most intense points.
+        # And to be honest, 10000 is still pushing it...
+        # TODO: There should be an option to force display all of the points
+        # and/or the option to specify the number of points to take?
+        most_intense_points = self.points
+        if len(self.points) > 10000:
+            most_intense_points = sorted(
+                self.points,
+                key=lambda pt: pt.intensity,
+                reverse=True)[0:10000]
+
+        # This is pretty unideal, could be done better.
         mz_data = Utils.to_ndarray(
-            points=self.points, attributes_to_include=['mz'])
+            points=most_intense_points, attributes_to_include=['mz'])
         rt_data = Utils.to_ndarray(
-            points=self.points, attributes_to_include=['rt'])
+            points=most_intense_points, attributes_to_include=['rt'])
         int_data = Utils.to_ndarray(
-            points=self.points, attributes_to_include=['intensity'])
+            points=most_intense_points, attributes_to_include=['intensity'])
 
         scatter3d = Scatter3D(x=mz_data, y=rt_data, z=int_data)
         scatter3d.plot()
