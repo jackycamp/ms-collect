@@ -115,7 +115,8 @@
 <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#quick-setup">Quick setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pre-requisites">Pre-requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#githooks">Githooks</a></li>
 </ul>
 </li>
 </ul>
@@ -141,7 +142,8 @@ But assumes that you have Python3 or pyenv setup on your machine.</p>
 </div></blockquote>
 <section id="quick-setup">
 <h2>Quick setup<a class="headerlink" href="#quick-setup" title="Permalink to this headline">¶</a></h2>
-<p>So you want to get your hands on the code huh? You want to know the quickest way to do that huh?</p>
+<blockquote>
+<div><p>So you want to get your hands on the code huh? You want to know the quickest way to do that huh?</p>
 <p>Easy. Just follow this section :)</p>
 <ol class="arabic simple">
 <li><p>First clone the repository and cd into ms-collect:</p></li>
@@ -165,9 +167,10 @@ of the source code under <code class="docutils literal notranslate"><span class=
 <ol class="arabic simple" start="4">
 <li><p>There are some datasets in csv format under <code class="docutils literal notranslate"><span class="pre">test/</span></code> that you can play around with as well.</p></li>
 </ol>
+</div></blockquote>
 </section>
-<section id="pre-requisites">
-<h2>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this headline">¶</a></h2>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>Install the linting and code formatting tools using pip</p>
 <ul class="simple">
@@ -186,6 +189,24 @@ the following extensions:</p>
 <li><p>Python-autopep8</p></li>
 <li><p>Change your Python Linter to: pycodestyle</p></li>
 </ul>
+</div></blockquote>
+</section>
+<section id="githooks">
+<h2>Githooks<a class="headerlink" href="#githooks" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>If you are a contributor i.e. are authorized to push code to ms-collect’s repository,
+please ensure that you have the shared githooks configured properly.</p>
+<p>Assuming that you have cloned the repository, you will notice that there is a directory
+named <code class="docutils literal notranslate"><span class="pre">.githooks/</span></code></p>
+<p>In order for the hooks in this directory to run, please update the hooks config for your local copy of this repo:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config core.hooksPath .githooks
+</pre></div>
+</div>
+<p>All of the hook scripts in this directory need to be executable, so please <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span></code> all files in the <code class="docutils literal notranslate"><span class="pre">.githooks/</span></code> directory.
+For example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>chmod +x .githooks/pre-commit
+</pre></div>
+</div>
 </div></blockquote>
 </section>
 </section>
