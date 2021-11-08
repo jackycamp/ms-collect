@@ -6,8 +6,7 @@ Contribute
 If you are interested in becoming a collaborator for this project, feel free
 to reach out to one of the current collaborators. 
 
-However, feel free to clone the source code, play around with it, make improvements,
-address some open issues, or whatever floats your boat. 
+But absolutely feel free to clone the source code and play around with it!
 
     This guide aims to make the setup of your ms-collect development environment a little easier.
     But assumes that you have Python3 or pyenv setup on your machine.
