@@ -6,7 +6,7 @@ A series of modules that provide easy storage/accesss to Mass Spec related Raw D
 - The Why: https://jakuzo.github.io/ms-collect/html/background.html
 - Contributing: https://jakuzo.github.io/ms-collect/html/contribute.html
 
-> Note this package is currently in BETA and is under active development. Moreover, the docs are a work in progress.
+> This package is currently in its BETA phase. Your understanding is greatly appreciated.
 
 ## Installation
 ```sh
