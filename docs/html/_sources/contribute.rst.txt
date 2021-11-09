@@ -45,20 +45,9 @@ Quick setup
     4. There are some datasets in csv format under ``test/`` that you can play around with as well.
 
 
-Requirements
---------------
+VS Code Setup
+---------------
 
-    Install the linting and code formatting tools using pip
-
-    - pycodestyle: linting/style checking in accordance with pep8
-    - autopep8: code formatting in accordance with pep8
-
-    .. code-block:: console
-
-        $ pip install pycodestyle
-
-        $ pip install autopep8
-    
     Most of the contributors use vscode, if you do too, then we recommend installing
     the following extensions:
 
@@ -90,6 +79,68 @@ Githooks
     .. code-block:: console
 
         $ chmod +x .githooks/pre-commit
+
+
+Requirements
+--------------
+
+    This section outlines installing each requirement and some context for each dependency.
+    If you just want to automatically install the dependencies and move on then:
+
+    .. code-block:: console
+
+        # At the same level as setup.cfg and pyproject.toml
+
+        $ pip install -r requirements.txt
+
+
+    But if you want some explanation behind each dependency and how to install them
+    individually then keep following along :)
+
+    - **pycodestyle**: Used for linting in accordance with pep8. (Also baked into our pre-commit hook)
+
+    .. code-block:: console
+
+        $ pip install pycodestyle
+
+    - **autopep8**: Used for auto formatting your python code in accordance with pep8
+
+    .. code-block:: console
+
+        $ pip install autopep8
+    
+    - **sphinx** TODO
+
+    .. code-block:: console
+
+        $ pip install sphinx
+
+    - **karma-sphinx-theme** TODO
+    
+    .. code-block:: console
+
+        $ pip install karma-sphinx-theme
+
+    - **build** TODO
+
+    .. code-block:: console
+
+        $ pip install build
+    
+    - **twine** TODO
+
+    .. code-block:: console
+
+        $ pip install twine
+
+    - **matplotlib** TODO
+
+    .. code-block:: console
+
+        $ pip install matplotlib
+
+
+
 
 
 

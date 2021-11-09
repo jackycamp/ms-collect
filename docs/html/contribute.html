@@ -106,7 +106,13 @@
                             
                                 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="background.html#a-raw-mass-spec-point">A Raw Mass Spec Point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#collection-of-ms-data-points">Collection of MS Data Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#ms-1-feature-envelope">MS-1 “Feature” / Envelope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#isotopic-traces">Isotopic Traces</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point.html">Point</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="point.html#constructor">Constructor</a></li>
@@ -154,8 +160,9 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#quick-setup">Quick setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vs-code-setup">VS Code Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#githooks">Githooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
 </ul>
@@ -208,20 +215,10 @@ of the source code under <code class="docutils literal notranslate"><span class=
 </ol>
 </div></blockquote>
 </section>
-<section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<section id="vs-code-setup">
+<h2>VS Code Setup<a class="headerlink" href="#vs-code-setup" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Install the linting and code formatting tools using pip</p>
-<ul class="simple">
-<li><p>pycodestyle: linting/style checking in accordance with pep8</p></li>
-<li><p>autopep8: code formatting in accordance with pep8</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install pycodestyle
-
-<span class="gp">$ </span>pip install autopep8
-</pre></div>
-</div>
-<p>Most of the contributors use vscode, if you do too, then we recommend installing
+<div><p>Most of the contributors use vscode, if you do too, then we recommend installing
 the following extensions:</p>
 <ul class="simple">
 <li><p>pylance</p></li>
@@ -244,6 +241,62 @@ named <code class="docutils literal notranslate"><span class="pre">.githooks/</s
 <p>All of the hook scripts in this directory need to be executable, so please <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span></code> all files in the <code class="docutils literal notranslate"><span class="pre">.githooks/</span></code> directory.
 For example:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>chmod +x .githooks/pre-commit
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>This section outlines installing each requirement and some context for each dependency.
+If you just want to automatically install the dependencies and move on then:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>At the same level as setup.cfg and pyproject.toml
+
+<span class="gp">$ </span>pip install -r requirements.txt
+</pre></div>
+</div>
+<p>But if you want some explanation behind each dependency and how to install them
+individually then keep following along :)</p>
+<ul class="simple">
+<li><p><strong>pycodestyle</strong>: Used for linting in accordance with pep8. (Also baked into our pre-commit hook)</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install pycodestyle
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>autopep8</strong>: Used for auto formatting your python code in accordance with pep8</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install autopep8
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>sphinx</strong> TODO</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install sphinx
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>karma-sphinx-theme</strong> TODO</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install karma-sphinx-theme
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>build</strong> TODO</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install build
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>twine</strong> TODO</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install twine
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>matplotlib</strong> TODO</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install matplotlib
 </pre></div>
 </div>
 </div></blockquote>
