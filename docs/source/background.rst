@@ -9,17 +9,20 @@ as well as the relations that some of these elements have.
 
 A Raw Mass Spec Point
 ----------------------
-Things about x,y,z = m/z, rt, intensity here
+TODO:
+mz, rt, int = x, y, z
 
 Collection of MS Data Points
 -----------------------------
+TODO:
 
 MS-1 "Feature" / Envelope
 --------------------------
-Things about envelopes
+TODO:
 
 
 Isotopic Traces
 ----------------
+TODO:
 
 
