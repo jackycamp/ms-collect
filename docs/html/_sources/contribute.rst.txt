@@ -81,6 +81,18 @@ Githooks
         $ chmod +x .githooks/pre-commit
 
 
+Working on the Docs
+--------------------
+TODO
+
+
+
+Building and Publishing ms-collect to PyPI
+--------------------------------------------
+
+TODO
+
+
 Requirements
 --------------
 
